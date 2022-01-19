@@ -5,7 +5,7 @@ const About = () => import('@/views/About.vue')
 const Mm = () => import('@/views/Mm.vue')
 
 const routes = [
-  {path: '/',redirect:'home'},
+  {path: '/',redirect:'/home'},
   {
     path: '/home',
     name: 'Home',
