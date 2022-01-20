@@ -6,7 +6,7 @@
       <router-link to="/home/about">About</router-link> |
       <router-link to="/home/mm">MM</router-link>
       <ul>
-        <li @click="ToLink(key+1)" v-for="(item,key) in s" :key="key">
+        <li @click="ToLink(key+1)" v-for="(item,key) in 5" :key="key">
           我是用户{{key+1}}
         </li>
       </ul>
@@ -35,7 +35,7 @@ export default {
     ToLink(id){
       this.$router.push({
         name: "user",
-        query: {
+        params: {
           id:id
         }
       })
